@@ -12,7 +12,7 @@
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet DZNSegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UIView *segmentedControlWrapperView;
 
 @end
 
@@ -21,7 +21,9 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [self.segmentedControl setItems:@[@"Test 1", @"Test 2", @"Test 3", @"Test 4"]];
+  DZNSegmentedControl *segmentedControl = [[DZNSegmentedControl alloc] init];
+  [segmentedControl setItems:@[@"Test 1", @"Test 2", @"Test 3", @"Test 4"]];
+  [self.segmentedControlWrapperView addSubview:segmentedControl];
 }
 
 - (void)didReceiveMemoryWarning {
