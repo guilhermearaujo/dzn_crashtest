@@ -84,6 +84,9 @@
                             <constraint firstItem="Eha-ae-eLW" firstAttribute="top" secondItem="Bjy-VY-xlN" secondAttribute="bottom" constant="171" id="YeG-ti-mYg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="aeI-17-qlY" id="7D7-AE-Soq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imh-h9-vQA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
